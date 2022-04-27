@@ -18,14 +18,13 @@
     // Multi Question Example
     let age 
     renderQuestion("How old are you?", function(output, ans) {
-        age = ans
-        output("Please continue on to the next question.")
+        age = ans // copy the "ans" parameter to the global "age" variable for later use
+        output("Thank you. Please continue on to the next question.")
     })
 
     renderQuestion("What is your favourite food?", function(output, ans) {
-        output(`You are age ${age} and you like ${ans}`)
+        output(`You are ${age} years old and you like ${ans}.`)
     })
-
 
    
 
